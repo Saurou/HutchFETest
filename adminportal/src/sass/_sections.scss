@@ -1,7 +1,14 @@
 .section {
-  background-color: var(--yellow);
+  background-color: var(--gray);
   position: relative;
   margin-bottom: clamp(40px, 15vh, 80px);
+
+  &--light {
+    background-color: var(--light);
+    .section__title {
+      color: var(--gray);
+    }
+  }
 }
 
 .section__title {
