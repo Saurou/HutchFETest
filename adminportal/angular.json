@@ -24,8 +24,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css",
-              "node_modules/metro-bootstrap/dist/css/metro-bootstrap.min.css"
+              "src/sass/styles.scss"
             ],
             "scripts": []
           },

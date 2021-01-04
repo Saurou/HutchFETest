@@ -1,0 +1,88 @@
+/* Reset */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap');
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+strong,
+em,
+li,
+small,
+pre,
+span,
+input,
+label,
+button,
+dt,
+dd {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+
+strong {
+  font-weight: 700;
+}
+
+input:matches([type="text"], [type="email"], [type="button"], [type="submit"], [type="reset"]) {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+a,
+input,
+button,
+summary {
+  outline: none;
+  background-color: transparent;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  padding: 0;
+}
+
+svg,
+source,
+img,
+video {
+  vertical-align: top;
+  width: 100%;
+  height: 100%;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+iframe,
+fieldset {
+  border: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  padding-left: 0;
+
+  li {
+    list-style: none;
+  }
+}

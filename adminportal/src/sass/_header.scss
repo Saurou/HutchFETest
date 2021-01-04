@@ -1,0 +1,19 @@
+.header {
+  background-color: var(--gray-dark);
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: clamp(5px, 1em, 10px);
+
+  h1 {
+    font-size: var(--spacing-medium);
+    color: var(--white);
+  }
+}
+
+.logo {
+  img {
+    width: clamp(20px, 2vw, 40px);
+  }
+}

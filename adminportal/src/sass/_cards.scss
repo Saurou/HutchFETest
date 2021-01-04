@@ -1,0 +1,143 @@
+.cards {
+  display: grid;
+  grid-gap: var(--spacing-medium);
+  align-items: baseline;
+  position: relative;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  width: 100%;
+  padding: clamp(40px, 2em, 80px);
+  z-index: 1;
+}
+
+.card {
+  color: var(--white);
+  font-weight: 700;
+  position: relative;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: stretch;
+  justify-content: center;
+  margin-bottom: clamp(20px, 1vh, 50px);
+}
+
+.card__header {
+  width: 100%;
+  height: clamp(150px, 10vh, 250px);
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--gray-dark);
+    clip-path: polygon(
+      0 20%,
+      100% 0,
+      100% 0,
+      100% 0,
+      100% 100%,
+      100% 100%,
+      0 100%,
+      0 100%,
+      0 0
+    );
+    z-index: 0;
+  }
+}
+
+.card__image {
+  position: relative;
+  z-index: 1;
+  width: 70%;
+  height: auto;
+  margin-top: -20%;
+  object-fit: contain;
+  pointer-events: none;
+}
+
+.card__title {
+  color: var(--white);
+  font-weight: 700;
+  z-index: 1;
+  position: absolute;
+  bottom: clamp(10px, 1em, 40px);
+  padding: 0 clamp(10px, 1em, 40px);
+  font-size: clamp(1rem, 1rem, 4rem);
+  margin-top: -1em;
+}
+
+.card__rating {
+  color: var(--white);
+  font-weight: 700;
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  z-index: 1;
+  color: var(--yellow);
+}
+
+.card__footer {
+  display: grid;
+  grid-gap: 1px;
+  margin-top: 1px;
+  grid-template-columns: 80% auto;
+  grid-auto-rows: clamp(25px, 1vh, 40px);
+
+  button {
+    display: block;
+    font-weight: 700;
+    background-color: var(--gray-dark);
+    color: var(--yellow);
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.card__button {
+  &:hover {
+    background-color: var(--white);
+    color: var(--gray-dark);
+  }
+}
+
+.card__button--red {
+  &:hover {
+    background-color: var(--red);
+    color: var(--white);
+  }
+}
+
+.cards__pagination {
+  color: var(--white);
+  text-align: center;
+
+  .ngx-pagination li.current {
+    background-color: var(--white);
+
+    span {
+      color: var(--gray-dark);
+    }
+  }
+
+  .ngx-pagination a {
+    color: var(--white);
+    &:hover {
+      background-color: var(--white);
+      color: var(--yellow);
+      span {
+        color: var(--yellow);
+      }
+    }
+    span {
+      color: var(--white);
+    }
+  }
+
+  .pagination-previous.disabled {
+    color: var(--white);
+  }
+}

@@ -1,0 +1,18 @@
+.icon {
+  width: auto;
+  height: 15px;
+  fill: var(--gray-dark);
+  margin-right: 10px;
+}
+
+.btn {
+  background-color: var(--white);
+  padding: 5px;
+  font-size: 700;
+  &:hover {
+    box-shadow: 1px 1px var(--gray-dark);
+  }
+  &:active {
+    transform: translate3d(1px,1px,0);
+  }
+}
